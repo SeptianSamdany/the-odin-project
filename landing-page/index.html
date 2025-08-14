@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plain — Clean Landing</title>
+
+  <!-- Inter untuk tampilan profesional & bersih -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#">Plain</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#features" class="nav__link">Fitur</a>
+        <a href="#pricing" class="nav__link">Harga</a>
+        <a href="#about" class="nav__link">Tentang</a>
+        <a href="#cta" class="btn btn--primary btn--sm">Coba Gratis</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="hero__title">Landing page yang <span class="accent">ringkas</span> dan <span class="accent">tepat sasaran</span>.</h1>
+        <p class="hero__subtitle">
+          Desain bersih untuk menyampaikan value produk tanpa gangguan. Cepat dibuat, mudah diadaptasi, dan siap produksi.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#cta">Mulai Sekarang</a>
+          <a class="btn btn--ghost" href="#features">Lihat Fitur</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img src="assets/hero.jpg" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <div class="container">
+      <h2 class="section__title">Dirancang untuk kejelasan</h2>
+      <p class="section__subtitle">Komponen seperlunya, tanpa elemen yang tidak perlu.</p>
+
+      <div class="grid-3 cards">
+        <article class="card">
+          <h3 class="card__title">Tipografi Rapi</h3>
+          <p class="card__desc">Hirarki jelas, ukuran konsisten, dan kontras aman dibaca.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Grid Konsisten</h3>
+          <p class="card__desc">Lebar kontainer tunggal, gutter seragam, dan jarak antar blok terukur.</p>
+        </article>
+        <article class="card">
+          <h3 class="card__title">Aksen Tunggal</h3>
+          <p class="card__desc">Satu warna aksen untuk interaksi: tombol, link utama, fokus.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials (simple) -->
+  <section id="about" class="section section--muted">
+    <div class="container narrow">
+      <figure class="quote">
+        <blockquote>
+          “Plain membantu kami menyampaikan pesan inti tanpa distraksi. Rasio konversi naik, bounce turun.”
+        </blockquote>
+        <figcaption>— Sinta, Growth Lead</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <h2 class="section__title">Harga sederhana</h2>
+      <div class="grid-3 plans">
+        <div class="plan">
+          <h3>Starter</h3>
+          <p class="plan__price">Gratis</p>
+          <ul class="plan__list">
+            <li>Semua blok dasar</li>
+            <li>Pembaruan minor</li>
+            <li>Dukungan komunitas</li>
+          </ul>
+          <a class="btn btn--ghost" href="#cta">Coba</a>
+        </div>
+        <div class="plan plan--focus">
+          <h3>Pro</h3>
+          <p class="plan__price">Rp99K/bln</p>
+          <ul class="plan__list">
+            <li>Komponen premium</li>
+            <li>Template email</li>
+            <li>Prioritas dukungan</li>
+          </ul>
+          <a class="btn btn--primary" href="#cta">Pilih Pro</a>
+        </div>
+        <div class="plan">
+          <h3>Team</h3>
+          <p class="plan__price">Rp249K/bln</p>
+          <ul class="plan__list">
+            <li>Lisensi tim</li>
+            <li>Kit brand</li>
+            <li>Onboarding call</li>
+          </ul>
+          <a class="btn btn--ghost" href="#cta">Hubungi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="section section--cta">
+    <div class="container cta">
+      <div>
+        <h3 class="cta__title">Siap online dengan tampilan profesional?</h3>
+        <p class="cta__subtitle">Mulai gratis, upgrade kapan saja.</p>
+      </div>
+      <a class="btn btn--primary btn--lg" href="#">Mulai Gratis</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2025 Plain</span>
+      <a href="#" class="footer__link">Kebijakan Privasi</a>
+    </div>
+  </footer>
+
+</body>
+</html>
