@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Rock Paper Scissors</h1>
+            <div class="controls">
+                <label for="target">First to:</label>
+                <select id="target">
+                    <option value="3" selected>3</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                </select>
+                <button id="reset">Reset</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-area">
+                <div class="scoreboard">
+                    <div class="score-card">
+                        <span class="label">You</span>
+                        <span id="humanScore" class="score">0</span>
+                    </div>
+                    <div class="score-card">
+                        <span class="label">Computer</span>
+                        <span id="computerScore" class="score">0</span>
+                    </div>
+                    <div class="score-card">
+                        <span class="label">Ties</span>
+                        <span id="ties" class="score">0</span>
+                    </div>
+                </div>
+
+                <div class="choices">
+                    <button class="choice-btn" data-choice="rock">
+                        <span class="icon">🪨</span>
+                        <span>Rock</span>
+                    </button>
+                    <button class="choice-btn" data-choice="paper">
+                        <span class="icon">📄</span>
+                        <span>Paper</span>
+                    </button>
+                    <button class="choice-btn" data-choice="scissors">
+                        <span class="icon">✂️</span>
+                        <span>Scissors</span>
+                    </button>
+                </div>
+
+                <div class="status" id="status">First to 3 wins. Good luck!</div>
+            </div>
+
+            <div class="game-log">
+                <h3>Game Log</h3>
+                <div class="log-container" id="logContainer">
+                    <ul id="logList"></ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="tip">Tip: Press <strong>R</strong>, <strong>P</strong>, or <strong>S</strong> on keyboard</p>
+            <button id="copyBtn">Copy Game Summary</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
